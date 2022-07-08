@@ -1,0 +1,1 @@
+print([...readline()].reduce((s,e)=>s+e.charCodeAt().toString(2).padStart(7,'0'),"").replace(/(0+)/g,'00 $1 ').replace(/(1+)/g,'0 $1 ').replace(/1/g,'0').trim())
